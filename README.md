@@ -1,2 +1,3 @@
-# s-markdown
-Element wrappers for the markdown libraries
+# `<s-markdown>`
+
+Ultra fast markdown parser.
