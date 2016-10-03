@@ -1,0 +1,18 @@
+<!--
+@license
+Copyright (c) 2016 The StartPolymer Project Authors. All rights reserved.
+This code may only be used under the MIT License found at https://github.com/StartPolymer/license
+The complete set of authors may be found at https://github.com/StartPolymer/authors
+The complete set of contributors may be found at https://github.com/StartPolymer/contributors
+-->
+
+<script>
+
+Polymer.SMarkdown.registerRule('ul', [
+  [/\n-(.*)/g, function(text, item) {
+    return '\n<ul>\n\t<li>' + item.trim() + '</li>\n</ul>';
+  }],
+  [/<\/ul>\s?<ul>/g, '']
+]);
+
+</script>

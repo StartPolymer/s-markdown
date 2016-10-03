@@ -1,0 +1,19 @@
+<!--
+@license
+Copyright (c) 2016 The StartPolymer Project Authors. All rights reserved.
+This code may only be used under the MIT License found at https://github.com/StartPolymer/license
+The complete set of authors may be found at https://github.com/StartPolymer/authors
+The complete set of contributors may be found at https://github.com/StartPolymer/contributors
+-->
+
+<script>
+
+Polymer.SMarkdown.registerRule('p', [[/\n([^\n]+)\n/g, function(text, line) {
+  var trimmed = line.trim();
+  if (/^<\/?(ul|ol|li|h|p|bl)/i.test(trimmed)) {
+    return '\n' + line + '\n';
+  }
+  return '\n<p>' + trimmed + '</p>\n';
+}]]);
+
+</script>

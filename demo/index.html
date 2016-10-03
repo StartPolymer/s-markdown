@@ -1,0 +1,104 @@
+<!doctype html>
+<!--
+@license
+Copyright (c) 2016 The StartPolymer Project Authors. All rights reserved.
+This code may only be used under the MIT License found at https://github.com/StartPolymer/license
+The complete set of authors may be found at https://github.com/StartPolymer/authors
+The complete set of contributors may be found at https://github.com/StartPolymer/contributors
+-->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>s-markdown demo</title>
+
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+  <link rel="import" href="../../paper-styles/demo-pages.html">
+  <link rel="import" href="../s-markdown.html">
+  <link rel="import" href="../s-markdown-rules.html">
+
+  <style is="custom-style">
+
+    .centered {
+      max-width: 550px;
+      padding: 0;
+      overflow: auto;
+    }
+
+    h1 {
+      margin-left: 30px;
+    }
+
+    h3 {
+      color: var(--google-grey-700);
+    }
+
+    section {
+      margin: 0 30px;
+    }
+
+    s-markdown {
+      display: block;
+      background-color: var(--google-grey-100);
+      padding: 10px 0;
+      margin-bottom: 10px;
+    }
+
+    .markdown-html.custom p {
+      padding-left: 24px;
+    }
+
+  </style>
+</head>
+
+<body unresolved>
+
+  <div class="vertical-section vertical-section-container centered">
+    <h1>&lt;s-markdown&gt;</h1>
+
+    <section>
+      <h3>Inline Text</h3>
+      <s-markdown rules="a blockquote code del em-strong h hr img ol q ul p">
+        <div class="markdown-html"></div>
+        <script type="text/markdown">
+          ## This is an h2 tag
+          ### This is an h3 tag
+
+          ---
+
+          `<div class="title">Title</div>`
+
+          **bold text**
+
+          ~~Scratch this.~~
+
+          :"Quote text":
+
+          > blockquote
+
+          - item 1
+          - item 2
+          - item 3
+
+          1. item 1
+          2. item 2
+          3. item 3
+
+          [Polymer](https://www.polymer-project.org)
+
+          ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+        </script>
+      </s-markdown>
+    </section>
+
+    <section>
+      <h3>Text via Attribute, with custom styling</h3>
+      <s-markdown markdown="***Bold and italic***" rules="em-strong">
+        <div class="markdown-html custom"></div>
+      </s-markdown>
+    </section>
+
+  </div>
+
+</body>
+</html>
