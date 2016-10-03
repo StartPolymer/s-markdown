@@ -1,6 +1,6 @@
 {
   "name": "s-markdown",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ultra fast regex-based Markdown parser.",
   "private": true,
   "authors": [
