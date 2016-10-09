@@ -1,8 +1,7 @@
 {
   "name": "s-markdown",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Ultra fast regex-based Markdown parser.",
-  "private": true,
   "authors": [
     "The StartPolymer Project Authors (https://github.com/StartPolymer/authors)"
   ],
