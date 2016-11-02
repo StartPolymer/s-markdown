@@ -15,7 +15,7 @@
   "dependencies": {
     "polymer": "Polymer/polymer#^1.1.0"
   },
-  "license": "https://github.com/StartPolymer/license",
+  "license": "MIT",
   "main": "s-markdown.html",
   "repository": {
     "type": "git",
