@@ -84,3 +84,7 @@ as you would a regular DOM element:
   padding-left: 24px;
 }
 ```
+
+## License
+
+MIT: [StartPolymer/license](https://github.com/StartPolymer/license)
