@@ -42,9 +42,13 @@ Or, you can provide it via a `<script type="text/markdown">` element child:
 
     ---
 
-    `<div class="title">Title</div>`
+    `var inlineCode = 0;`
 
-    **bold text**
+    *italic text* | _italic text_
+
+    **bold text** | __bold text__
+
+    ***italic bold text*** | ___italic bold text___
 
     ~~Scratch this.~~
 
@@ -60,9 +64,11 @@ Or, you can provide it via a `<script type="text/markdown">` element child:
     2. item 2
     3. item 3
 
-    [Polymer](https://www.polymer-project.org)
+    [Link](https://www.polymer-project.org)
 
     ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+
+    <img src="http://example.com/test_skipping_em_rule_for_line_contain_html_tag.html">
   </script>
 </s-markdown>
 ```
