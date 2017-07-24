@@ -11,7 +11,7 @@ thing! https://github.com/PolymerLabs/tedium/issues
 
 -->
 
-##&lt;s-markdown&gt;
+## &lt;s-markdown&gt;
 
 Ultra fast regex-based Markdown parser.
 
