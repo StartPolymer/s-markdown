@@ -271,9 +271,10 @@ Polymer({
       } else { // Single line rules.
         var changedLines = markdown.split('\n');
         for (var i = 0; i < changedLines.length; i++) {
-          // Skip blank changed line or original line contain html element.
-          // https://regex101.com/r/gOQIFi/1
-          if (changedLines[i] === '' || /<([a-z]+|[a-z]+-[a-z-]*)[^>]*>/i.test(lines[i])) {
+          // Skip blank changed line or original line contain HTML element attribute which have a URL value.
+          // https://regex101.com/r/KPL7B1/1
+          if (changedLines[i] === '' ||
+              /<([a-z]+|[a-z]+-[a-z-]*)[^>]*\s+(action|cite|href|longdesc|src|srcset|url|usemap)\s*(=|\()\s*(["'][^"']+["']|[^>]+)>/i.test(lines[i])) {
             continue;
           }
           // For regex issue.
