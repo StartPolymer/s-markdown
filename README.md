@@ -13,7 +13,7 @@ thing! https://github.com/PolymerLabs/tedium/issues
 
 ## &lt;s-markdown&gt;
 
-Ultra fast regex-based Markdown parser.
+Fast modular regex-based Markdown parser.
 
 Inspired by [&lt;marked-element&gt;](https://github.com/PolymerElements/marked-element) and [Slimdown](https://gist.github.com/jbroadway/2836900).
 
